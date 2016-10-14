@@ -21,6 +21,12 @@ while read p; do
   pip install $p
 done <requirements.txt
 
+#get any extra commands that need to be run
+while read p; do
+  $p
+done <extra.txt
+
+#get run file and execute
 while read p; do 
   $p
 done <run.txt
