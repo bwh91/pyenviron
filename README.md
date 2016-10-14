@@ -21,4 +21,6 @@ gunicorn /myproject/myproject.wsgi
 
 Using this script you can run one command and have a whole environment installed and running.
 
+If you need any extra commands to set up the environment or anything else you can store them in a file called "extra.txt". Commands in this file will be un after install everything from "requirements.txt" but before the "run.txt" file is executed.
+
 
