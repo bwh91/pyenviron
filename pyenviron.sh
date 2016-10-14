@@ -21,5 +21,8 @@ while read p; do
   pip install $p
 done <requirements.txt
 
+while read p; do 
+  $p
+done <run.txt
 
 echo "Python environmet complete"
